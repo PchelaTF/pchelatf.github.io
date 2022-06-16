@@ -1132,6 +1132,9 @@ body._lock {
   .header__logo {
     line-height: 100%;
   }
+  .header__menu {
+    gap: 15px;
+  }
   .header__phone {
     display: -webkit-box;
     display: -ms-flexbox;
