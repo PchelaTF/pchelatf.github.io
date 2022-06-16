@@ -1,0 +1,194 @@
+// ===============HEADER========================
+
+@media (max-width: 1200px) {
+    .header {
+        &__menu {
+            gap: 50px;
+        }
+    
+        &__menu-list {
+            gap: 25px;
+        }
+
+        &__phone {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .header {
+        &__menu {
+        }
+
+        &__wrapper {
+        }
+        
+        &__menu {
+            position: relative;
+        }
+
+        &__menu-list {
+            position: fixed;
+            top: 90px;
+            right: -100%;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1;
+            transition: all .3s ease;
+            &::after {
+                content: '';
+                position: absolute;
+                top: -6px;
+                left: -20px;
+                width: 115%;
+                height: 106%;
+                background-color: #fff;
+                opacity: .5;
+                border-radius: 20px;
+                z-index: -1;
+            }
+        }
+
+        &__menu-list.menu-open {
+            right: 15px;
+        }
+
+        &__menu-item {
+            background: #FFFFFF;
+            border-radius: 20px;
+            padding: 15px 25px;
+            text-align: center;
+        }
+
+        &__phone {
+        }
+    }
+
+    .menu {
+        position: relative;
+        display: block;
+		width: 31px;
+		height: 20px;
+		cursor: pointer;
+		z-index: 5;
+		span,
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			right: 0;
+			position: absolute;
+			width: 100%;
+			height: 3px;
+			background-color: #000;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			bottom: 0;
+		}
+		span {
+			top: 41%;
+		}
+		&.menu-open {
+			span {
+				width: 0;
+			}
+			&::before,
+			&::after {
+			}
+			&::before {
+				top: 45%;
+				transform: rotate(-45deg);
+			}
+			&::after {
+				bottom: 45%;
+				transform: rotate(45deg);
+			}
+		}
+	}
+    
+}
+
+@media (max-width: 479.98px) {
+    .header {
+        padding: 10px 0 11px 0;
+
+        &__wrapper {
+        }
+    
+        &__logo {
+            line-height: 100%;
+            & img {
+                width: 34.29px;
+                height: 20px;
+            }
+        }
+
+        &__phone {
+            display: flex;
+            align-items: center;
+
+            &-icon{
+                font-size: 0;
+                & svg {
+                    width: 15px;
+                    height: 15px;
+                }
+                
+            }
+            
+            &-number{
+                font-size: 15px;
+                line-height: 120%;
+            }
+        }
+
+        &__menu-list {
+            top: 47px;
+        }
+    }
+}
+
+// ===============HEADER========================
+
+
+@media (max-width: 479.98px) {
+    .main {
+
+        &__screen {
+        }
+    
+        &__screen-bg {
+            & img {
+                width: 167%;
+                left: -231px;
+            }
+        }
+        
+        &__container {
+            top: -85%
+        }
+        &__screen-content {
+            
+        }
+    
+        &__screen-header {
+            text-align: center;
+            font-size: 22px;    
+        }
+    
+        &__screen-text {
+            font-size: 18px;
+        }
+    
+        &__screen-button {
+            display: block;
+            text-align: center;
+            font-size: 15px;
+        }
+    }
+}
+

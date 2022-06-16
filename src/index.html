@@ -1,0 +1,771 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item">
+                                <a data-goto=".main__screen" href="#" class="header__menu-link">Головна</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a data-goto=".help" href="#" class="header__menu-link">Наша допомога</a></li>
+                            <li class="header__menu-item">
+                                <a data-goto=".about" href="#" class="header__menu-link">Про нас</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a data-goto=".requisites" href="#" class="header__menu-link">Реквізити</a></li>
+                            <li class="header__menu-item">
+                                <a data-goto=".howtoget" href="#" class="header__menu-link">Оформити заявку</a>
+                            </li>
+                        </ul>
+                        <div class="header__phone">
+                            <a href="tel:+380660000000" class="header__phone-icon">
+                                <svg width="19" height="19" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.0789 13.7233C17.9918 13.5891 16.9124 13.3988 15.8449 13.1533C15.5843 13.0661 15.3056 13.0478 15.0358 13.0999C14.766 13.1521 14.5143 13.2731 14.3049 13.4511C14.0328 13.7285 13.2474 14.504 12.4312 15.3051C9.50688 13.8669 7.14186 11.499 5.70653 8.57221C6.5022 7.75564 7.24654 6.97501 7.54941 6.70282C7.72737 6.49336 7.84828 6.24148 7.90044 5.97157C7.9526 5.70166 7.93424 5.42284 7.84714 5.16211C7.60137 4.09248 7.41118 3.01082 7.27734 1.92148C7.263 1.78276 7.22058 1.64842 7.15265 1.52664C7.08473 1.40486 6.99273 1.29819 6.88226 1.21314C6.77179 1.12808 6.64516 1.06643 6.5101 1.03193C6.37504 0.997427 6.23437 0.990804 6.09667 1.01246H1.72304C1.54251 1.02877 1.37351 1.10827 1.24581 1.23697C1.1181 1.36568 1.03988 1.53532 1.0249 1.71605C0.742568 5.66541 2.94478 9.89209 3.39138 10.7035V10.7343L3.45298 10.8525C5.05169 13.6265 7.3536 15.9294 10.1264 17.5289V17.5289L10.3522 17.6573C11.3789 18.2017 15.4599 20.2559 19.274 19.9735C19.4565 19.9608 19.6285 19.8836 19.7592 19.7556C19.89 19.6276 19.9709 19.4573 19.9875 19.275V14.9045C20.0092 14.7668 20.0026 14.626 19.9681 14.4909C19.9336 14.3558 19.872 14.2291 19.787 14.1186C19.7019 14.0081 19.5953 13.916 19.4736 13.8481C19.3519 13.7801 19.2176 13.7377 19.0789 13.7233Z"
+                                        stroke="#0B0127" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a href="tel:+380660000000" class="header__phone-number">+380660000000</a>
+                        </div>
+                        <div class="menu">
+                            <span></span> 
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main__screen">
+                <div class="main__screen-bg">
+                    <img src="img/main_photo.png" alt="hend">
+                </div>
+                <div class="main__container">
+                    <div class="main__screen-content">
+                        <h1 class="main__screen-header">
+                            Благодійний фонд GHelp:
+                            допомагати Харківщині,
+                            бути поряд!
+                        </h1>
+                        <p class="main__screen-text">
+                            Ми команда волонтерів, яка від початку повномасштабної війни з Росією допомагає людям, які
+                            залишилися у Харкові та Харківській області.
+                        </p>
+                        <a data-goto=".howtoget" href="#" class="main__screen-button btn">Як отримати допомогу?</a>
+                    </div>
+                </div>
+            </section>
+            <section class="about">
+                <div class="about__container">
+                    <div class="about__header header-block">
+                        <div class="about__header-title">
+                            Благодійний фонд GHelp
+                        </div>
+                    </div>
+                    <div class="about__body">
+                        <div class="about__body-story text-block decoration-blue">
+                            <h2 class="text-block__title">Історія створення фонду</h2>
+                            <p class="text-block__text">
+                                Ми — жителі Харкова, які були вимушені виїхати з регіону через початок російського
+                                вторгнення. Коли ми опинилися у безпечному місці, ми почали шукати способи допомогти
+                                харківянам та жителям області. Ми розуміємо, що не у всіх є можливість евакуюватися.
+                                Саме тому ми останні місяці докладаємо зусиль, щоб покращити життям людям, які
+                                залишилися у небезпеці.
+                            </p>
+                        </div>
+                        <div class="about__body-member text-block decoration-yellow">
+                            <h2 class="text-block__title">Представники фонду</h2>
+                            <p class="text-block__text">
+                                У фонді зараз працює близько двох десятка людей. Здебільшого, це представники компанії
+                                LGT, фірми з надання логістичних послуг по всьому світу. Ми — волонтери, тож гроші за
+                                свою діяльність не беремо. До нашої команди може доєднатися будь-хто з охочих.
+                            </p>
+                        </div>
+                        <div class="about__body-cards cards">
+                            <div class="cards__item">
+                                <div class="cards__item-logo">
+                                    <img src="img/icons/about/products.svg" alt="products">
+                                </div>
+                                <div class="cards__item-text">
+                                    Розвозимо продукти
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item-logo">
+                                    <img src="img/icons/about/medicine.svg" alt="medicine">
+                                </div>
+                                <div class="cards__item-text">
+                                    Доставляємо медикаменти
+                                </div>
+                            </div>
+                            <div class="cards__item">
+                                <div class="cards__item-logo">
+                                    <img src="img/icons/about/solder.svg" alt="solder">
+                                </div>
+                                <div class="cards__item-text">
+                                    Допомагаємо ЗСУ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__body-help text-block decoration-yellow">
+                            <h2 class="text-block__title">Як ми допомагаємо</h2>
+                            <p class="text-block__text">
+                                Як благодійний фонд ми збираємо гроші, які донатять люди з різних куточків України та
+                                світу. Ці гроші ми розподіляємо на закупівлю продуктів, ліків та техніки. Ми приймаємо
+                                заявки від людей та розвозимо допомогу адресно у Харкові (інколи маємо змогу доїхати в
+                                область). За кожну гривню ми звітуємо перед людьми.
+                            </p>
+                        </div>
+                        <div class="about__body-yourshelp text-block decoration-blue">
+                            <h2 class="text-block__title">Як ви можете допомогти</h2>
+                            <p class="text-block__text">
+                                Ми потребуємо інформаційної та матеріальної підтримки. Чим більше про нас дізнаються,
+                                тим більшій кількості людей ми зможемо допомогти. Якщо ви хочете допомогти фізично
+                                (розвозити продукти, постачати бензин тощо), звертайтесь до нас за телефоном або у
+                                соціальних мережах.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="benefits">
+                <div class="benefits__container">
+                    <div class="benefits__wrapper">
+                        <div class="benefits__month">
+                            <p class="benefits__month-number">3</p>
+                            <p class="benefits__month-text">місяці роботи</p>
+                        </div>
+                        <div class="benefits__team">
+                            <p class="benefits__team-number">20</p>
+                            <p class="benefits__team-text">людей у команді</p>
+                        </div>
+                        <div class="benefits__help">
+                            <p class="benefits__help-number">100+</p>
+                            <p class="benefits__help-text">людей отримали допомогу</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="help">
+                <div class="help__container">
+                    <div class="help__header header-block">
+                        Наша допомога
+                    </div>
+                    <div class="help__body">
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-yellow">
+                                <h2 class="text-block__title">Допомога людям у селі Палатка</h2>
+                                <p class="text-block__date">01/06/2022</p>
+                                <p class="text-block__text">
+                                    Команда благодійного фонду GHelp відвезла продукти до села Палатки Харківської
+                                    області. Там зараз живуть люди, яких евакуювали з Харкова. Усього допомогу
+                                    отримали
+                                    близько 50 людей, яка там проживають.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="02">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-blue">
+                                <h2 class="text-block__title">Ремонт автівки «Буцефал» </h2>
+                                <p class="text-block__date">06/05/2022</p>
+                                <p class="text-block__text">
+                                    Ми зібрали необхідну кількість коштів, щоб відремонтувати автівку та повернути
+                                    бус у
+                                    той стан, в якому він зможе і надалі допомагати харків‘янам, і навіть більше!
+                                    Кошти,
+                                    які залишились від сбору, ми витратили на закуп продуктів харчування і передали
+                                    нашим волонтерам у Харків!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-yellow">
+                                <h2 class="text-block__title">Адресна допомога Харкову</h2>
+                                <p class="text-block__date">21/04/2022</p>
+                                <p class="text-block__text">
+                                    Наш бус вийшов зі Львова, довантажився у Ковелі (дякуємо церкві), далі Луцьк –
+                                    докупили продукти в «Metro». Це все поїхало вчора до Харкова на адресні
+                                    доставки.
+                                    Намагаємося максимально доставляти саме адресною, тому що зараз це точна
+                                    гарантія,
+                                    що продукти дійдуть до адресата.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-yellow">
+                                <h2 class="text-block__title">Допомога людям у селі Палатка</h2>
+                                <p class="text-block__date">01/06/2022</p>
+                                <p class="text-block__text">
+                                    Команда благодійного фонду GHelp відвезла продукти до села Палатки Харківської
+                                    області. Там зараз живуть люди, яких евакуювали з Харкова. Усього допомогу
+                                    отримали
+                                    близько 50 людей, яка там проживають.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="02">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-blue">
+                                <h2 class="text-block__title">Ремонт автівки «Буцефал» </h2>
+                                <p class="text-block__date">06/05/2022</p>
+                                <p class="text-block__text">
+                                    Ми зібрали необхідну кількість коштів, щоб відремонтувати автівку та повернути
+                                    бус у
+                                    той стан, в якому він зможе і надалі допомагати харків‘янам, і навіть більше!
+                                    Кошти,
+                                    які залишились від сбору, ми витратили на закуп продуктів харчування і передали
+                                    нашим волонтерам у Харків!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-yellow">
+                                <h2 class="text-block__title">Адресна допомога Харкову</h2>
+                                <p class="text-block__date">21/04/2022</p>
+                                <p class="text-block__text">
+                                    Наш бус вийшов зі Львова, довантажився у Ковелі (дякуємо церкві), далі Луцьк –
+                                    докупили продукти в «Metro». Це все поїхало вчора до Харкова на адресні
+                                    доставки.
+                                    Намагаємося максимально доставляти саме адресною, тому що зараз це точна
+                                    гарантія,
+                                    що продукти дійдуть до адресата.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-yellow">
+                                <h2 class="text-block__title">Допомога людям у селі Палатка</h2>
+                                <p class="text-block__date">01/06/2022</p>
+                                <p class="text-block__text">
+                                    Команда благодійного фонду GHelp відвезла продукти до села Палатки Харківської
+                                    області. Там зараз живуть люди, яких евакуювали з Харкова. Усього допомогу
+                                    отримали
+                                    близько 50 людей, яка там проживають.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="02">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-blue">
+                                <h2 class="text-block__title">Ремонт автівки «Буцефал» </h2>
+                                <p class="text-block__date">06/05/2022</p>
+                                <p class="text-block__text">
+                                    Ми зібрали необхідну кількість коштів, щоб відремонтувати автівку та повернути
+                                    бус у
+                                    той стан, в якому він зможе і надалі допомагати харків‘янам, і навіть більше!
+                                    Кошти,
+                                    які залишились від сбору, ми витратили на закуп продуктів харчування і передали
+                                    нашим волонтерам у Харків!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="help__body-item">
+                            <div class="sliderbody">
+                                <div class="help__body-slider slider-items swiper">
+                                    <div class="slider-items__wrapper swiper-wrapper">
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/03.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/02.png" alt="01">
+                                        </div>
+                                        <div class="slider-items__image swiper-slide">
+                                            <img src="img/help/01.png" alt="01">
+                                        </div>
+                                    </div>
+                                    <div class="slider-items__prev swiper-button-prev">
+                                        <img src="img/help/arrow_prev.svg" alt="prev">
+                                    </div>
+                                    <div class="slider-items__next swiper-button-next">
+                                        <img src="img/help/arrow_next.svg" alt="next">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="help__body-content text-block decoration-yellow">
+                                <h2 class="text-block__title">Адресна допомога Харкову</h2>
+                                <p class="text-block__date">21/04/2022</p>
+                                <p class="text-block__text">
+                                    Наш бус вийшов зі Львова, довантажився у Ковелі (дякуємо церкві), далі Луцьк –
+                                    докупили продукти в «Metro». Це все поїхало вчора до Харкова на адресні
+                                    доставки.
+                                    Намагаємося максимально доставляти саме адресною, тому що зараз це точна
+                                    гарантія,
+                                    що продукти дійдуть до адресата.
+                                </p>
+                            </div>
+                        </div>
+                        <button class="help__body-button btn btn-more">
+                            Більше новин
+                        </button>
+                        <button class="help__body-button btn btn-less">
+                            Менше новин
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="howtoget">
+                <div class="howtoget__container">
+                    <div class="howtoget__header header-block">
+                        Як отримати гумінатарну допомогу
+                    </div>
+                    <div class="howtoget__body">
+                        <div class="howtoget__body-columns column">
+                            <h2 class="column__title decoration-blue">
+                                Хто може отримати допомогу?
+                            </h2>
+                            <h4 class="column__subtitle">
+                                Ви можете отримати допомогу, якщо
+                            </h4>
+                            <ul class="column__list">
+                                <li class="column__list-item">
+                                    Проживате у Харкові
+                                </li>
+                                <li class="column__list-item">
+                                    Проживаете у районах, які географічно близькі до Харкова
+                                </li>
+                                <li class="column__list-item">
+                                    Не маєте змоги купити продукти або ліки
+                                </li>
+                                <li class="column__list-item">
+                                    Воюєте у складі бригад ЗСУ на території Харківської області
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="howtoget__body-columns column big">
+                            <h2 class="column__title decoration-yellow">
+                                Як оформити заявку?
+                            </h2>
+                            <h4 class="column__subtitle">
+                                Щоб отримати гуманітарну допомогу, слід звернутися до наших волонтерів.
+                            </h4>
+                            <div class="column__arrows">
+                                <img src="img/icons/howtoget/arrow_left.svg" alt="arrow">
+                                <img src="img/icons/howtoget/arrow_right.svg" alt="arrow">
+                            </div>
+                            <div class="column__cards">
+                                <a href="tel:+380660000000" class="column__cards-phone">
+                                    <img src="img/icons/howtoget/phone.svg" alt="phone">
+                                    <div>
+                                        <p>Зателефонувати</p>
+                                        <p>+380660000000</p>
+                                    </div>
+                                </a>
+                                <a target="_blank" href="https://www.instagram.com/" class="column__cards-instagram">
+                                    <img src="img/icons/howtoget/instagram.svg" alt="instagram">
+                                    <div>
+                                        <p>Написати повідомлення</p>
+                                        <p>в Instagram</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="insert">
+                <div class="insert__container">
+                    <div class="insert__wrapper">
+                        <p class="insert__text">
+                            <span>Фонд GHelp</span> — це некомерційна організація. Засновники та учасники, а також їх
+                            рідні, не
+                            можуть
+                            отримувати будь-який вид прибутку, розподіляти фінанси фонду між його працівниками.
+                        </p>
+                        <a data-goto=".requisites" href="#" class="insert__button btn">
+                            Допомогти фонду
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="report">
+                <div class="report__container">
+                    <div class="report__header header-block">
+                        Звіти про роботу фонду
+                    </div>
+                    <div class="report__body">
+                        <div class="report__body-slider ">
+                            <div class="slider__body swiper">
+                                <div class="slider__body-columns swiper-wrapper">
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date decor-text-blue">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date decor-text-blue">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date decor-text-blue">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date decor-text-blue">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date decor-text-blue">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="slider__body-column slider__column swiper-slide">
+                                        <div class="slider__column-img">
+                                            <img src="img/report/photo_doc.png" alt="doc">
+                                        </div>
+                                        <div class="slider__column-content">
+                                            <p class="slider__column-date decor-text-blue">
+                                                01/06/2022
+                                            </p>
+                                            <p class="slider__column-text">
+                                                Звіт про збір коштів на допомогу евакуйованим жителям Харківської
+                                                області у селі Палатка
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slider__body-prev swiper-button-prev">
+                                    <img src="img/report/arrow_prev.svg" alt="prev">
+                                </div>
+                                <div class="slider__body-next swiper-button-next">
+                                    <img src="img/report/arrow_next.svg" alt="next">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="requisites">
+                <div class="requisites__container">
+                    <div class="requisites__header">
+                        Реквізити нашого фонду
+                    </div>
+                    <div class="requisites__body">
+                        <div class="requisites__body-columns">
+                            <div class="left__column">
+                                <p class="left__column-text">
+                                    Ви можете пожертвовати у наш фонд будь-яку суму. Усі гроші обовязково підуть на
+                                    потреби тим, хто звертається до нас по допомогу. Ми регулярно звітуємо перед усіма,
+                                    хто долучається до нашої волонтерської роботи.
+                                </p>
+                                <div class="left__column-quote">
+                                    <p>“В добро вірять лише ті деякі, хто його творить”</p>
+                                    <span>Марія Ебнер-Эшенбах</span>
+                                </div>
+                            </div>
+                            <div class="right__column">
+                                <div class="right__column-mono">
+                                    <p class="column-mono__title">Донат в один клік через Monobank</p>
+                                    <a href="#" class="column-mono__link">https://send.monobank.ua</a>
+                                </div>
+                                <h4>Перерахувати гроші на картку </h4>
+                                <h5>Приватбанк: 1111 1111 1111 1111</h5>
+                                <h5>Монобанк: 1111 1111 1111 1111</h5>
+                                <h6>картки на імʼя Іванова Павла</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__wrapper">
+                        <div class="footer__fund">
+                            <a href="#" class="footer__fund-link">
+                                <img class="footer__fund-img" src="img/icons/footer/footer_logo.svg" alt="logo">
+                            </a>
+                            <p class="footer__fund-name">Благодійний фонд GHelp</p>
+                        </div>
+                        <div class="footer__nav">
+                            <a data-goto=".main__screen" href="#" class="footer__nav-item">Головна</a>
+                            <a data-goto=".help" href="#" class="footer__nav-item">Наша допомога</a>
+                            <a data-goto=".about" href="#" class="footer__nav-item">Про нас</a>
+                            <a data-goto=".requisites" href="#" class="footer__nav-item">Реквізити</a>
+                            <a data-goto=".howtoget" href="#" class="footer__nav-item">Оформити заявку</a>
+                        </div>
+                        <div class="footer__contacts">
+                            <div class="footer__contacts-header">
+                                Наші контакти
+                            </div>
+                            <div class="footer__contacts-tel">
+                                <a href="#"><img src="img/icons/footer/tel.svg" alt="tel"></a>
+                                <a href="#">+380660000000</a>
+                            </div>
+                            <div class="footer__contacts-inst">
+                                <a href="#"><img src="img/icons/footer/instagram.svg" alt="instagram"></a>
+                                <a href="#">goodhelpfund</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__copy">
+                        &copy Усі права захищені
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

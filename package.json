@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jshint": "^2.13.4",
+    "swiper": "^8.2.3"
+  }
+}
