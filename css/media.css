@@ -46,7 +46,7 @@
   .header__menu-item {
     background: #FFFFFF;
     border-radius: 20px;
-    padding: 35px 47px;
+    padding: 25px 47px;
     text-align: center;
   }
   .menu {
@@ -112,6 +112,12 @@
   }
 }
 
+@media (max-width: 1045px) {
+  __screen-bg img {
+    opacity: 0.5;
+  }
+}
+
 @media (max-width: 479.98px) {
   .main__screen-bg img {
     width: 135%;
@@ -128,9 +134,9 @@
     font-size: 20px;
   }
   .main__screen-button {
-    padding: 10 0px;
+    padding: 15px 0;
     display: block;
     text-align: center;
-    font-size: 18px;
+    font-size: 15px;
   }
 }
