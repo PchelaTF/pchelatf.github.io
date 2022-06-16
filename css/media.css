@@ -113,7 +113,7 @@
 }
 
 @media (max-width: 1045px) {
-  __screen-bg img {
+  .main__screen-bg img {
     opacity: 0.5;
   }
 }

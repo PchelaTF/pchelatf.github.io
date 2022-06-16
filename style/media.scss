@@ -159,9 +159,11 @@
 // ===============MAIN========================
 
 @media (max-width: 1045px) {
-    &__screen-bg {
-        & img {
-            opacity: 0.5;
+    .main {
+        &__screen-bg {
+            & img {
+                opacity: 0.5;
+            }
         }
     }
 }
