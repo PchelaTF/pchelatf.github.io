@@ -91,15 +91,8 @@
 }
 
 @media (max-width: 479.98px) {
-  .header {
-    padding: 10px 0 11px 0;
-  }
   .header__logo {
     line-height: 100%;
-  }
-  .header__logo img {
-    width: 34.29px;
-    height: 20px;
   }
   .header__phone {
     display: -webkit-box;
@@ -111,14 +104,6 @@
   }
   .header__phone-icon {
     font-size: 0;
-  }
-  .header__phone-icon svg {
-    width: 15px;
-    height: 15px;
-  }
-  .header__phone-number {
-    font-size: 15px;
-    line-height: 120%;
   }
   .header__menu-list {
     top: 47px;
