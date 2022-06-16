@@ -1061,6 +1061,7 @@ body._lock {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 15px;
+    font-size: 25px;
     z-index: 1;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
@@ -1072,8 +1073,8 @@ body._lock {
     left: -20px;
     width: 115%;
     height: 106%;
-    background-color: #fff;
-    opacity: .5;
+    background-color: #d9d9d9;
+    opacity: .8;
     border-radius: 20px;
     z-index: -1;
   }
@@ -1083,7 +1084,7 @@ body._lock {
   .header__menu-item {
     background: #FFFFFF;
     border-radius: 20px;
-    padding: 15px 25px;
+    padding: 35px 47px;
     text-align: center;
   }
   .menu {
@@ -1145,9 +1146,6 @@ body._lock {
   }
   .header__phone-icon {
     font-size: 0;
-  }
-  .header__menu-list {
-    top: 47px;
   }
 }
 

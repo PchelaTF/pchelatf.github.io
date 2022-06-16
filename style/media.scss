@@ -34,6 +34,7 @@
             right: -100%;
             flex-direction: column;
             gap: 15px;
+            font-size: 25px;
             z-index: 1;
             transition: all .3s ease;
             &::after {
@@ -43,8 +44,8 @@
                 left: -20px;
                 width: 115%;
                 height: 106%;
-                background-color: #fff;
-                opacity: .5;
+                background-color: #d9d9d9;
+                opacity: .8;
                 border-radius: 20px;
                 z-index: -1;
             }
@@ -57,7 +58,7 @@
         &__menu-item {
             background: #FFFFFF;
             border-radius: 20px;
-            padding: 15px 25px;
+            padding: 35px 47px;
             text-align: center;
         }
 
@@ -151,7 +152,7 @@
         }
 
         &__menu-list {
-            top: 47px;
+            // top: 47px;
         }
     }
 }

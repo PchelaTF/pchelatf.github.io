@@ -160,12 +160,24 @@ const menu = document.querySelector('.menu');
 
 menu.addEventListener('click', (e) => {
     const menuList = document.querySelector('.header__menu-list'),
-            body = document.querySelector('body');
-            
+        body = document.querySelector('body');
+
     menuList.classList.toggle('menu-open');
     menu.classList.toggle('menu-open');
     body.classList.toggle('_lock');
+    document.querySelectorAll('.header__menu-item').forEach(item => item.classList.toggle('menu-open'));
 });
+
+document.querySelectorAll('.header__menu-link').forEach(item => item.addEventListener('click', () => {
+    const menuList = document.querySelector('.header__menu-list'),
+        body = document.querySelector('body');
+
+    menuList.classList.remove('menu-open');
+    body.classList.remove('_lock');
+    document.querySelectorAll('.header__menu-item').forEach(item => item.classList.remove('menu-open'));
+}));
+
+
 // для разворота блоков. пусть полежит
 // reverse
 // const helpBodyItem = document.querySelectorAll('.help__body-item');
