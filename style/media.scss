@@ -73,6 +73,7 @@
 		height: 20px;
 		cursor: pointer;
 		z-index: 5;
+        margin-top: 3px;
 		span,
 		&::before,
 		&::after {
@@ -129,7 +130,7 @@
         }
 
         &__menu {
-            gap: 15px;
+            gap: 45px;
         }
 
         &__phone {
@@ -137,10 +138,8 @@
             align-items: center;
 
             &-icon{
-                font-size: 0;
+                    display: none;
                 & svg {
-                    // width: 15px;
-                    // height: 15px;
                 }
                 
             }
@@ -168,13 +167,15 @@
     
         &__screen-bg {
             & img {
-                width: 167%;
-                left: -231px;
+                // width: 167%;
+                // left: -231px;
+                width: 135%;
+                left: -125px;
             }
         }
         
         &__container {
-            top: -85%
+            top: -80%;
         }
         &__screen-content {
             
@@ -186,13 +187,14 @@
         }
     
         &__screen-text {
-            font-size: 18px;
+            font-size: 20px;
         }
     
         &__screen-button {
+            padding: 10 0px;
             display: block;
             text-align: center;
-            font-size: 15px;
+            font-size: 18px;
         }
     }
 }

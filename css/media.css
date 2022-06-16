@@ -56,6 +56,7 @@
     height: 20px;
     cursor: pointer;
     z-index: 5;
+    margin-top: 3px;
   }
   .menu span, .menu::before, .menu::after {
     content: "";
@@ -96,7 +97,7 @@
     line-height: 100%;
   }
   .header__menu {
-    gap: 15px;
+    gap: 45px;
   }
   .header__phone {
     display: -webkit-box;
@@ -107,28 +108,29 @@
             align-items: center;
   }
   .header__phone-icon {
-    font-size: 0;
+    display: none;
   }
 }
 
 @media (max-width: 479.98px) {
   .main__screen-bg img {
-    width: 167%;
-    left: -231px;
+    width: 135%;
+    left: -125px;
   }
   .main__container {
-    top: -85%;
+    top: -80%;
   }
   .main__screen-header {
     text-align: center;
     font-size: 22px;
   }
   .main__screen-text {
-    font-size: 18px;
+    font-size: 20px;
   }
   .main__screen-button {
+    padding: 10 0px;
     display: block;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
   }
 }

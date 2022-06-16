@@ -175,6 +175,7 @@ document.querySelectorAll('.header__menu-link').forEach(item => item.addEventLis
     menuList.classList.remove('menu-open');
     body.classList.remove('_lock');
     document.querySelectorAll('.header__menu-item').forEach(item => item.classList.remove('menu-open'));
+    menu.classList.remove('menu-open');
 }));
 
 
