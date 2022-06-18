@@ -59,10 +59,64 @@ function initSlider(arr) {
                 // el: '.swiper-scrollbar',
             },
 
-            spaceBetween: 10,
+            // spaceBetween: -20,
+
+            breakpoints: {
+                1310: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+
+                840: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    spaceBetween: -30
+                },
+
+                640: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    spaceBetween: 0,
+                }
+            }
         });
     });
 }
+
+// slider block repost _slider
+function initSliderBig(el) {
+
+    new Swiper(el, {
+        // Optional parameters
+        // loop: true,
+        slidesPerView: 1.3,
+        slidesPerGroup: 1,
+
+        // If we need pagination
+        pagination: {
+            // el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            // nextEl: '.swiper-button-next',
+            // prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            // el: '.swiper-scrollbar',
+        },
+
+        spaceBetween: 18,
+        // centeredSlides: true
+        // setWrapperSize: 1756,
+        // centerInsufficientSlides: true,
+        // slidesOffsetBefore: 46,
+    });
+}
+const sliderBig = document.querySelector('.help__body._slider')
+initSliderBig(sliderBig);
 
 // slider block repost
 function initSliderReportz(el) {
@@ -116,8 +170,12 @@ addDecor(date);
 // hide content in section.help and addEvent on button More and Less
 function hide() {
     for (let i = 3; i < blockHelp.length; i++) {
-        blockHelp[i].style.display = 'none';
-        blockHelp[i].classList.add('hide');
+        if (blockHelp[i].classList.contains('_slider')) {
+            continue;
+        } else {
+            blockHelp[i].style.display = 'none';
+            blockHelp[i].classList.add('hide');
+        }
     }
 
     btnLess.style.display = 'none';
@@ -155,7 +213,7 @@ btnLess.addEventListener('click', () => {
     btnLess.style.display = 'none';
 });
 
-
+// Menu burger 
 const menu = document.querySelector('.menu');
 
 menu.addEventListener('click', (e) => {
@@ -298,10 +356,6 @@ function hideSpollersBody(spollersBlock) {
     }
 }
 
-const arrows = document.querySelectorAll('.arrow');
-for (const arrow of arrows) {
-    arrow.addEventListener('click', setSpollerAction);
-}
 // =========================================================================
 
 //SlideToggle
