@@ -70,7 +70,7 @@ function initSlider(arr) {
                 840: {
                     slidesPerView: 2,
                     slidesPerGroup: 1,
-                    spaceBetween: -30
+                    spaceBetween: -20
                 },
 
                 640: {
@@ -124,12 +124,14 @@ function initSliderReportz(el) {
     new Swiper(el, {
         // Optional parameters
         // loop: true,
-        slidesPerView: 3,
-        slidesPerGroup: 1,
+        // slidesPerView: 3,
+        slidesPerView: 1,
+        // slidesPerGroup: 1,
 
         // If we need pagination
         pagination: {
-            // el: '.swiper-pagination',
+            el: '.swiper-pagination',
+            clickable: true,
         },
 
         // Navigation arrows
@@ -144,10 +146,24 @@ function initSliderReportz(el) {
         },
 
         spaceBetween: 60,
+        // spaceBetween: 30,
         // centeredSlides: true
         // setWrapperSize: 1756,
-        centerInsufficientSlides: true,
-        slidesOffsetBefore: 46,
+        // centerInsufficientSlides: true,
+        // slidesOffsetBefore: 46,
+        // centeredSlidesBounds: true,
+
+        breakpoints: {
+            720.98: {
+                slidesPerView: 2,
+                slidesPerGroup: 1,
+            },
+
+            991.98: {
+                slidesPerView: 3,
+                slidesPerGroup: 1,
+            }
+        }
     });
 
 }
