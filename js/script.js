@@ -9,7 +9,12 @@ const menuLink = document.querySelectorAll('.header__menu-link[data-goto]'),
     sliderReport = document.querySelector('.slider__body'),
     blockHelp = document.querySelectorAll('.help__body-item'),
     btnMore = document.querySelector('.btn-more'),
-    btnLess = document.querySelector('.btn-less');
+    btnLess = document.querySelector('.btn-less'),
+    footerBtn = document.querySelector('.footer__button'),
+    menu = document.querySelector('.menu'),
+    sliderBig = document.querySelector('.help__body._slider'),
+    spollersArray = document.querySelectorAll('[data-spollers]');
+
 let currIndex = 0;
 
 // плавный скролл к блокам
@@ -33,6 +38,7 @@ menuLink.forEach(link => link.addEventListener('click', onMenuClick));
 menuLinkFooter.forEach(link => link.addEventListener('click', onMenuClick));
 mainBtn.addEventListener('click', onMenuClick);
 insertBtn.addEventListener('click', onMenuClick);
+footerBtn.addEventListener('click', onMenuClick);
 
 // Слайдерs блока help
 initSlider(slidersHelp);
@@ -115,7 +121,6 @@ function initSliderBig(el) {
         // slidesOffsetBefore: 46,
     });
 }
-const sliderBig = document.querySelector('.help__body._slider')
 initSliderBig(sliderBig);
 
 // slider block repost
@@ -230,7 +235,6 @@ btnLess.addEventListener('click', () => {
 });
 
 // Menu burger 
-const menu = document.querySelector('.menu');
 
 menu.addEventListener('click', (e) => {
     const menuList = document.querySelector('.header__menu-list'),
@@ -255,8 +259,6 @@ document.querySelectorAll('.header__menu-link').forEach(item => item.addEventLis
 
 // Спойлеры 
 
-const spollersArray = document.querySelectorAll('[data-spollers]');
-
 // Получение обычных слойлеров
 const spollersRegular = Array.from(spollersArray).filter(function (item, index, self) {
     return !item.dataset.spollers.split(",")[0];
@@ -265,7 +267,6 @@ const spollersRegular = Array.from(spollersArray).filter(function (item, index, 
 if (spollersRegular.length > 0) {
     initSpollers(spollersRegular);
 }
-
 
 const spollersMedia = Array.from(spollersArray).filter(function (item, index, self) {
     return item.dataset.spollers.split(",")[0];
@@ -449,7 +450,6 @@ let _slideToggle = (target, duration = 500) => {
 //         item.classList.add('reverse')
 //     }
 // });
-
 
 // ===========================================================================================================
 // для определения это тачскрин или пк
